@@ -1,0 +1,208 @@
+:root {
+    --color-first: #444;
+    --color-second: #222;
+    --color-three: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-first);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* new */
+
+.new-game__container {
+    padding: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--color-second);
+}
+
+.new-game__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: var(--color-first);
+}
+
+.form__title {
+    margin: 0 0 60px;
+    font-size: 36px;
+    color: var(--color-second);
+}
+
+.form__question {
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__descr {
+    margin: 0;
+    margin-right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-second);
+}
+
+.form__select {
+    padding: 6px;
+    border-width: 3px;
+    border-radius: 6px;
+    border-color: var(--color-second);
+    font-size: 24px;
+    color: var(--color-second);
+    background-color: var(--color-first);
+    transition: border-color .3s ease-in-out, color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.form__select:focus {
+    outline: none;
+}
+
+.form__select:focus,
+.form__select:hover {
+    border-color: var(--color-three);
+    color: var(--color-three);
+    box-shadow: 0 0 25px var(--color-three);
+}
+
+.form__btn {
+    align-self: flex-end;
+    padding: 20px 40px;
+    border: 3px solid var(--color-second);
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-second);
+    background-color: var(--color-first);
+    transition: border-color .3s ease-in-out, color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.form__btn:focus {
+    outline: none;
+}
+
+.form__btn:focus,
+.form__btn:hover {
+    border-color: var(--color-three);
+    color: var(--color-three);
+    box-shadow: 0 0 25px var(--color-three);
+}
+
+/* game */
+
+.game__container {
+    display: grid;
+    max-width: 800px;
+    min-height: 800px;
+    padding: 40px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: var(--color-second);
+}
+
+.game__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--color-first);
+    border-radius: 10px;
+    background-color: #444;
+    transition: background-color .3s ease-in-out, color .1s ease-in-out, box-shadow .1s ease-in-out, outline .1s ease-in-out, font-size .1s ease-in-out;
+}
+
+.game__card--open {
+    color: #222;
+}
+
+.game__card--success {
+    background-color: var(--color-three);
+    color: #222;
+}
+
+.game__card--open:focus,
+.game__card--open:hover {
+    color: var(--color-three);
+}
+
+.game__card:focus,
+.game__card:hover {
+    font-size: 55px;
+    outline: 2px solid var(--color-three);
+    box-shadow: 0 0 25px var(--color-three);
+}
+
+.game__card.game__card--success {
+    color: #222;
+}
+
+/* win */
+
+.win-game__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--color-second);
+}
+
+.win-game__title {
+    margin: 0 0 60px;
+    font-size: 36px;
+    color: #444;
+}
+
+.win-game__question {
+    margin: 0 0 50px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+}
+
+.win-game__wrapper-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.win-game__btn {
+    margin: 0;
+    padding: 10px 30px;
+    border: 2px solid var(--color-second);
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-second);
+    background-color: var(--color-first);
+    transition: border-color .3s ease-in-out, color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.win-game__btn:focus {
+    outline: none;
+}
+
+.win-game__btn:focus,
+.win-game__btn:hover {
+    border-color: var(--color-three);
+    color: var(--color-three);
+    box-shadow: 0 0 25px var(--color-three);
+}
